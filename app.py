@@ -1,5 +1,16 @@
 import streamlit as st
 from pypdf import PdfReader
+import google.generativeai as genai
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+api_key = os.getenv("GEMINI_API_KEY")
+
+genai.configure(api_key=api_key)
+
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 st.set_page_config(page_title="CareerPilot AI", page_icon="🚀")
 
@@ -28,5 +39,22 @@ if uploaded_file:
     st.text_area(
         "Extracted Resume Text",
         resume_text,
-        height=300
+        height=250
     )
+
+    if st.button("Generate Interview Questions"):
+        with st.spinner("Generating Questions..."):
+
+            prompt = f"""
+            Analyze the following resume and generate
+            10 technical interview questions.
+
+            Resume:
+            {resume_text}
+            """
+
+            response = model.generate_content(prompt)
+
+            st.subheader("AI Generated Interview Questions")
+
+            st.write(response.text)
