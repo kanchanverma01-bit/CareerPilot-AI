@@ -1,39 +1,53 @@
 # 🚀 CareerPilot AI
 
-AI-powered Interview Preparation & Mock Interview Platform that analyzes resumes and conducts real-time interview simulations using LLMs.
+AI-powered Mock Interview Platform that analyzes resumes and conducts personalized interview simulations using Large Language Models (LLMs).
 
----
+## 🌟 Features
 
-## 🧠 Features
-
-- 📄 Resume Parsing (PDF to Text Extraction)
-- 🤖 AI-Powered Interview Question Generation (based on resume)
-- 🎤 Interactive Mock Interview System
-- 📊 AI Answer Evaluation (Score + Feedback)
-- 🔄 Dynamic Follow-up Questions
-- 💡 Personalized Improvement Suggestions
-
----
+* 📄 Resume Parsing (PDF, DOCX, TXT Support)
+* 🔍 OCR Support for Scanned Resumes
+* 🤖 AI-Powered Interview Question Generation
+* 🎤 Voice & Text-Based Answer Submission
+* 📊 AI Answer Evaluation with Detailed Feedback
+* 💡 Personalized Improvement Suggestions
+* 🎯 Difficulty Levels (Easy, Medium, Hard)
+* 🔄 Dynamic Interview Experience
 
 ## ⚙️ Tech Stack
 
-- Python 🐍
-- Streamlit 🎈
-- Groq / LLM API 🤖
-- PyPDF 📄
-- dotenv 🔐
-- JavaScript (Voice Input UI)
-
----
+* Python
+* Streamlit
+* Groq API (LLM)
+* PyPDF
+* Python-DOCX
+* Tesseract OCR
+* PDF2Image
+* Streamlit Mic Recorder
+* dotenv
 
 ## 🎯 Project Goal
 
-To simulate real-world FAANG-style interviews using AI and help candidates improve their technical + communication skills.
+CareerPilot AI helps students and job seekers prepare for technical interviews through AI-driven mock interview sessions, resume-based questioning, and instant feedback.
 
----
-
-## 🚀 How to Run
+## 🚀 How to Run Locally
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
+
+## 📌 Future Enhancements
+
+* ATS Resume Score Checker
+* Real-Time Speech-to-Text
+* Multi-Round Interviews (HR + Technical)
+* Downloadable Interview Reports
+* Performance Analytics Dashboard
+
+## 👩‍💻 Author
+
+Kanchan Verma
+
+B.Tech (Artificial Intelligence & Machine Learning)
+
+IGDTUW
