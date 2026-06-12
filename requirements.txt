@@ -3,3 +3,7 @@ groq
 python-dotenv
 pypdf
 streamlit-mic-recorder
+pytesseract
+pdf2image
+python-docx
+Pillow
